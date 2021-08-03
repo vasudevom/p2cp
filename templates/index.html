@@ -1,0 +1,531 @@
+{% extends  'base.html' %}
+{% block content %}
+
+    <!---------------------- background Carousal---------------- -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="1500">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://source.unsplash.com/1200x400/?game,tech" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>hello everyone</h5>
+                    <p>asdfg</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://source.unsplash.com/1200x400/?tech,science" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://source.unsplash.com/1200x400/?tech,man" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+    <div class="container-fluid" style="width:70%;">
+        <div class="trans">
+            <img src="../static/img/svg/Vector.svg" class="img-responsive" alt="Logo">
+            <h4>500+ </h4>
+            <h5>Top Interns</h5>
+        </div>
+        <div class="trans">
+            <img src="../static/img/svg/clarity_users-line.svg" class="img-responsive" alt="Logo">
+            <h4>1000+ </h4>
+            <h5>Employees</h5>
+        </div>
+        <div class="trans">
+            <img src="../static/img/svg/bi_calendar4-event.svg" class="img-responsive" alt="Logo">
+            <h4>30 june,2021 </h4>
+            <h5>Start date</h5>
+        </div>
+        <div class="trans">
+            <img src="../static/img/svg/la_chalkboard-teacher.svg" class="img-responsive" alt="Logo">
+            <h4>15+ </h4>
+            <h5>Expertise</h5>
+        </div>
+    </div>
+
+
+
+    <!-----------------------    CAROUSAL END---------- -->
+
+    <!-- ----------------- About US  --->
+
+    <div class="aboutus-area">
+        <div class="col-xs-12">
+            <div class="col-lg-6  col-sm-6 col-xs-12">
+                <div class="aboutus-image float-left "><img src="../static/img/about-us.png" alt="about-us-photo"></div>
+            </div>
+            <div>
+                <div class="aboutus-content ">
+                    <h2>
+                        ABOUT US
+                    </h2>
+                    <p>At Power2Career we have our team of dedicated and qualified industry professional and trainers who break down complex concepts into easy to learn modules. The theoretical learning is complemented by hands-on practical learning sessions
+                        on emerging tools and sciences. Post the training sessions, you will get an opportunity to work on a live project applying the theory to practice and also be handed a guanranteed placement opportunity in one of our partner companies.
+
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------   OUR COURSES Start ---------------------------------->
+    <!-- <div class="line2">
+        <img src="./img/Line 9.svg" alt="">
+    </div> -->
+    <div class="container">
+        <h2 class="#course-title">OUR COURSES</h2>
+        <div class="card-deck">
+            <div class="card mb-4">
+                <img class="card-img-top img-fluid" src="../static/img/svg/DRFT_1.svg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Engineering & Emerging Sciences</h4>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <img class="card-img-top img-fluid" src="../static/img/finance_image.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title"> Finance</h4>
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none">
+                <!-- wrap every 2 on sm-->
+            </div>
+            <div class="card mb-4">
+                <img class="card-img-top img-fluid" src="../static/img/supply-chain-img.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Logistics & Supply Chain Management</h4>
+
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none">
+                <!-- wrap every 2 on sm-->
+            </div>
+            <div class="card mb-4">
+                <img class="card-img-top img-fluid" src="../static/img/supply-chain-img.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Logistics & Supply Chain Management</h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- ------------REgister and search course------------------- -->
+
+    <!-- <div class="register">
+        <div class="reg-form">
+            <h4>
+                Register now and book your seat until 1 July
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href=""><button class="reg-now">REREGISTER NOW</button></a>
+
+        </div>
+        <div class="search">
+            <h5>Search for your course</h5>
+            <form action="#">
+                <input type="text" name="course" id="course-name" placeholder="Course name"><br>
+                <input type="text" name="course" id="course-category" placeholder="Category"><br>
+                <input type="text" name="course" id="course-name" placeholder="Degree"><br>
+                <button type="search">Search Course</button>
+            </form>
+        </div>
+    </div> -->
+    <!-- <section id="Review">
+        <div class="review-row">
+            <div class="review-column">
+                <h1>
+                    Register now and book your seat until 1 July
+                </h1>
+            </div>
+            <div class="review-column2">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="review-column3">
+                <p>
+                    REGISTER NOW
+                </p>
+            </div>
+        </div>
+        <div class="review-row1">
+            <div calss="header">
+                <h1>
+                    Search for your course
+                </h1>
+            </div>
+            <div class="form-column">
+                <input type="text" id="fname" name="fname" value="course name "><br>
+            </div>
+            <div class="form-column1">
+                <input type="text" id="fname" name="fname" value="course name "><br>
+            </div>
+            <div class="form-column2">
+                <input type="text" id="fname" name="fname" value="course name "><br>
+            </div>
+            <div class="form-column3">
+                <input type="submit" value="SEARCH COURSE">
+            </div>
+        </div>
+    </section> -->
+    <!--   Timer Section -->
+    <div class="timer">
+        <div class="time-img">
+            <img src="../static/img/cuate.png" alt="">
+        </div>
+        <div class="text">
+            <h6><span>Next course</span> starting</h6>
+            <p>Become a member today</p>
+        </div>
+        <div class="countdown">
+            <p id="headline">Stock trading courses will be starting soon!!!</p>
+            <span id="days"></span> Days:
+            <span id="hours"></span>Hours:
+            <span id="minutes"></span>Minutes:
+            <span id="seconds"></span>Seconds
+        </div>
+        <div>
+            <a href="">
+                <button class="learn-more">Learn More</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- -------------   OUR SERVICES------------------------- -->
+    <div class="row mbr-justify-content-center">
+        <div class="col-lg-6 mbr-col-md-10">
+            <div class="wrap">
+                <div class="ico-wrap">
+                    <img src="../static/img/Vector-(1).png" alt="">
+                    <span class="mbr-iconfont fa-volume-up fa"></span>
+                </div>
+                <div class="text-wrap vcenter">
+                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Top <span>Programs</span>
+                    </h2>
+                    <p class="mbr-fonts-style text1 mbr-text display-6">Top Programs In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mbr-col-md-10">
+            <div class="wrap">
+                <div class="ico-wrap">
+                    <img src="../static/img/Vector-(2).png" alt="">
+                    <span class="mbr-iconfont fa-calendar fa"></span>
+                </div>
+                <div class="text-wrap vcenter">
+                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Indoor
+                        <span>Courses</span>
+                    </h2>
+                    <p class="mbr-fonts-style text1 mbr-text display-6">
+                        In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mbr-col-md-10">
+            <div class="wrap">
+                <div class="ico-wrap">
+                    <img src="../static/img/Vector-(3).png" alt="">
+                    <span class="mbr-iconfont fa-globe fa"></span>
+                </div>
+                <div class="text-wrap vcenter">
+                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Amazing
+                        <span>Library</span>
+                    </h2>
+                    <p class="mbr-fonts-style text1 mbr-text display-6">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mbr-col-md-10">
+            <div class="wrap">
+                <div class="ico-wrap">
+                    <img src="../static/img/Vector-(3).png" alt="">
+                    <span class="mbr-iconfont fa-trophy fa"></span>
+                </div>
+                <div class="text-wrap vcenter">
+                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Expetional <span>Professor</span></h2>
+                    <p class="mbr-fonts-style text1 mbr-text display-6">
+                        In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------   Collabration ----------------  -->
+
+    <div id="collab">
+        <div id="collab-heading">
+            <p>NEW COLLABRATION</p>
+        </div>
+        <div id="institution">
+            <p>OUR
+                <span id="institution-label">PARTNERS</span> INSTITUTION</p>
+        </div>
+    </div>
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4> IIM Indore</h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/iim-indore-logo.jpg" class="img-fluid" alt=" iim Indore">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5> 11 Interns</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4> IIM Bodhgaya</h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/bodhgaya-logo.jpg" class="img-fluid" alt="Bodhgaya">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5> 6 Interns</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4> SRCC </h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/srcc.jfif" class="img-fluid" alt="SRCC">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5> 5 Interns</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4> NMIMS Mumbai</h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/nmims.png" class="img-fluid" alt="Nmims Mumbai">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5>6 Interns</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4> IIM Jammu</h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/jammu.jpg" class="img-fluid" alt="iim Jammu">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5>4 Interns</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4> Students IIM Rohtak</h4>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="../static/img/rohtak.png" class="img-fluid" alt="iim rohtak">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5> 7 Interns</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4>IIM RAIPUR</h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/raipur.png" class="img-fluid" alt="iim RAIPUR">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5>21 Interns</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4>IIM SIRMAUR</h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/sirmaur.jpg" class="img-fluid" alt="iim SIRMAUR">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5>5 Interns</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4>NMIS BANGLORE ROHTAK</h4>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="../static/img/sirmaur.jpg" class="img-fluid" alt="BANGLORE rohtak">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5>6 Interns</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4>IIM RANCHI</h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/IIM-Ranchi.jpg" class="img-fluid" alt="RANCHI">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5> 4 Interns </h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4>IBS MUMBAI</h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/ibs-mumbai.jpg" class="img-fluid" alt=" iim Mumbai">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5>8 Interns</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb-content">
+                                            <h4>TAPMI</h4>
+                                        </div>
+                                        <br>
+                                        <div class="img-box">
+                                            <img src="../static/img/tapmi.jfif" class="img-fluid" alt="TAPMI">
+                                        </div>
+                                        <hr>
+                                        <div class="thumb-content">
+                                            <h5> 7 Interns</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" id="prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" id="next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="update-div">
+        <div class="arrow-down">
+            <img src="../static/img/svg/Arrow2.svg" alt="">
+        </div>
+        <div id="core-update">
+            <div id="core-update-headline">
+                <p>For further upcoming updates subscribe here</p>
+            </div>
+            <div id="emailnsubscribe">
+                <div id="update-email">
+                    <div>
+                        <p>Email</p>
+                    </div>
+                    <div id="email-input">
+                        <input type="email" placeholder="example: @gmail.com">
+                    </div>
+                </div>
+                <div id="update-subscribe">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-down">
+            <img src="../static/img/svg/Arrow2.svg" alt="">
+        </div>
+    </div>
+    </div>
+{% endblock %}

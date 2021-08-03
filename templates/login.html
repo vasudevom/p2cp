@@ -1,0 +1,55 @@
+{% extends  'base.html' %}
+{% block content %}
+{% for message in messages %}
+    <div id="message" >
+     <li style="text-align:center; color:red;" {% if message.tags %} class="{{ message.tags }}"{% endif %}>
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+        {{ message }}
+    </li>
+    </div>
+{% endfor %}
+    <section class="login-block">
+            <div class="col-sm-12">
+                <form class="md-float-material form-material" id="sign" action=" " method="POST">
+                    {% csrf_token %}
+                        <div class="auth-box card">
+                            <div class="card-block" id="signup">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 class="text-center heading">SIGN IN</h3>
+                                    </div>
+                                </div>
+                            <div class="form-group form-primary"> 
+                                <input type="text" class="form-control" name="email" value="" placeholder="Email" id="email">
+                            </div>
+                            <div class="form-group form-primary">
+                                <input type="password" class="form-control" name="password" placeholder="Password" value="" id="password">
+                            </div>
+                            <div class="forget"><a href="/accounts/forgot_password/"> Forgot password ?</a></div><br>
+                                <div class="row">
+                                    <div class="col-md-12"> <input type="submit" id="btn-bg" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="submit" value="Login"> 
+                                    </div>
+                                </div>
+                            <div class="or-container">
+                                <div class="line-separator"></div>
+                                    <div class="or-label">or</div>
+                                        <div class="line-separator"></div>
+                                </div>
+                                
+                                <div class="col-md-12" id="linkedin"> 
+                                    <a class="btn btn-lg btn-linkedin btn-block btn-outline" href="#"><img src="/../static/img/linkedin.png"> Signin Using Linkedin</a>
+                                </div>
+                                
+                                <br>
+                                <p class="text-inverse text-center">Don't have Account? <a href="/accounts/signup/" data-abc="true">Click here</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+
+

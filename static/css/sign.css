@@ -1,0 +1,139 @@
+body {
+    background-color: #f2f7fb
+}
+
+.login-block {
+    margin: 30px auto;
+    min-height: 93.6vh
+}
+.card-block {
+    padding: 1.25rem
+}
+
+.f-80 {
+    font-size: 80px
+}
+
+.form-group {
+    margin-bottom: 1.25em
+}
+
+.form-material .form-control {
+    display: inline-block;
+    height: 43px;
+    width: 100%;
+    border: none;
+    border-radius:8px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc
+}
+
+.btn-md {
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 23px
+}
+
+.btn-primary {
+    background-color: #182f41;
+    border-color: #4099ff;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s
+}
+
+.btn {
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 10px 19px;
+    cursor: pointer;
+    background-color: #182f41 !important;
+    color: #f2f7fb !important;
+}
+
+.m-b-20 {
+    margin-bottom:20px
+}
+
+.btn-md {
+    padding: 10px 16px;
+    font-size:10px
+}
+
+.heading {
+    font-size: 21px
+}
+
+#infoMessage p {
+    color: red !important
+}
+
+.btn-linkedin {
+    color: #d1c4c4;
+    background-color: #ce1d1d;
+    box-shadow: 0 1px 2px 1px rgb(29, 28, 28)
+}
+#linkedin :hover{
+    background-color: #f79521  !important;
+    transition-delay: 0.3s;
+    transition-property: all;
+}
+
+.or-container {
+    align-items: center;
+    color: #ccc;
+    display: flex;
+    margin: 25px 0
+}
+
+.line-separator {
+    background-color: #ccc;
+    flex-grow: 5;
+    height: 1px
+}
+
+.or-label {
+    flex-grow: 1;
+    margin: 0 15px;
+    text-align: center
+}
+#signup {
+	background: rgba(228, 223, 223, 0.7);
+    border-radius: 12px;
+    border-top: 1px solid rgba(231, 225, 225, 0.5);
+    border-left: 1px solid rgba(223, 217, 217, 0.5);
+    padding: 60px;
+    box-shadow: rgba(195, 190, 190, 0.5) -20px -20px 45px,
+      rgba(228, 223, 223, 0.1) 10px 10px 20px, rgba(168, 164, 164, 0.06) 5px 5px 10px;
+    position: relative;
+}
+.login-block .auth-box {
+    margin: 20px auto 0;
+    max-width: 450px !important;
+    border-radius: 12px;
+}
+.cross {
+    position: absolute;
+    background:transparent;
+    color:black;
+    top: 10px;
+    right: 10px;
+    
+}
+
+#btn-bg{
+    background-color: #182f41;
+}
+
+#btn-bg:hover{
+    background-color: #f79521 !important;
+}
+#message li {
+color:green;
+}
+

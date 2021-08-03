@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">                #p2c-21-105
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link" href="{% url 'home'%}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login'%}">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="alert alert-danger" role="alert">
+  <h1 style="text-align:center;">Register Here</h1>
+</div>
+<form action="/register/" method="POST">
+    {% csrf_token %}
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4"> First Name</label>
+      <input type="text" class="form-control" id="first name" name="firstname">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Last name</label>
+      <input type="text" class="form-control" id="last name" name="lastname">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Username</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="usename" name="username">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Email</label>
+    <input type="email" class="form-control" id="inputAddress2" placeholder="email" name="email">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputstate">Password 1</label>
+      <input type="password" class="form-control" id="password 1" name="pass1">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputState">Password 2</label>
+        <input type="password" class="form-control" id="password 2" name="pass2">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+</div>
+
+</body>
+</html>

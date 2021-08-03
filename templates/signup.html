@@ -1,0 +1,77 @@
+{% extends  'base.html' %}
+{% block content %}
+{% for message in messages %}
+    <div id="message" >
+     <li  style="text-align:center; color:lightgreen;" {% if message.tags %} class="{{ message.tags }}"{% endif %}>
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+        {{ message }}
+    </li>
+    </div>
+{% endfor %}
+<section class="login-block">
+                <div class="col-sm-12">
+                    <form class="md-float-material form-material" id="sign" action=" " method="POST" enctype="multipart/form-data" >{% csrf_token %}
+                        <div class="auth-box card">
+                            <div class="card-block" id="signup">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 class="text-center heading">SIGN UP</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="text" name="firstname" class="form-control" placeholder="First name *"  required>
+                                    </div>
+                                    <div class="col">
+                                      <input type="text"  name="lastname" class="form-control" placeholder="Last name *" required>
+                                    </div>
+                                </div><br>
+                                <div class="form-group form-primary"> <input type="text" class="form-control" name="email" value="" placeholder="Email *" id="email" required> </div>
+                                <div class="form-group form-primary"> <input type="text" class="form-control" name="Address" value="" placeholder="Address *" id="first_name" required> </div>
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="text" name="username" class="form-control" placeholder="Username *" required>
+                                    </div>
+                                    <div class="col">
+                                      <input type="tel"  name="phoneno" class="form-control" id="phone" placeholder="Mobile no.*"  required>
+                                    </div>
+                                </div><br>
+                              <div class="form-group form-primary"> <input type="text" class="form-control" name="college name" placeholder="College name *" value="" id="Colleg_name" required> </div>
+                                <div class="form-group form-primary"> <input type="text" class="form-control" name="Branch" placeholder="Branch *" value="" id="Branch" required> </div>
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="password" name="password" class="form-control" placeholder="Password *" required>
+                                    </div>
+                                    <div class="col">
+                                      <input type="passwordre" name="passwordre" class="form-control" placeholder="Re-enter*" required>
+                                    </div>
+                                    
+                                    
+                                     
+                                </div><br>
+                                <div class="col">
+                                     <li style="color:blue; font:1rem;" >Choose Profile</li>
+                                     <input  type="file"   name="image" class="form-control"  required>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-12 "  > <input type="submit"  id="btn-bg" class=" btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="submit" value="Signup Now"> 
+                                    </div>
+                                </div>
+                                <div class="or-container">
+                                    <div class="line-separator"></div>
+                                    <div class="or-label">or</div>
+                                    <div class="line-separator"></div>
+                                </div>
+                                 <div class="col-md-12" id="linkedin"> <a class="btn btn-lg btn-linkedin btn-block btn-outline" href="#"><img src="/../static/img/linkedin.png"> Signup Using Linkedin</a> </div>
+                               <br>
+                                <p class="text-inverse text-center">Already have an account? <a href="/accounts/login/" data-abc="true">Login</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            
+        </div>
+    </section>
+{% endblock %}

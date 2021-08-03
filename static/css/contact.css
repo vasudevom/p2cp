@@ -1,0 +1,143 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+#home {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#home-div1 img {
+    width: 100%;
+    /* border: 2px solid red; */
+    /* overflow-x: hidden; */
+}
+
+#home-div2 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+}
+
+#home-div2 h2 {
+    font-size: 7.5vw;
+    color: #F79521;
+}
+
+#touch-join {
+    margin-top: 156px;
+    display: inline-flex;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+#touch-join-div1 {
+    /* background-color: red; */
+    /* height: 100px; */
+    width: 55%;
+    /* text-align: center; */
+    /* border: 2px solid red; */
+}
+
+.touch-join-h1 {
+    font-size: 45px;
+    color: #000000;
+    font-weight: 400;
+    margin-left: 15%;
+}
+
+#touch-join-div2 {
+    /* height: 100px; */
+    width: 45%;
+    /* background-color: green; */
+}
+
+#form {
+    margin-top: 10%;
+}
+
+.form1 {
+    width: 90%;
+    background-color: #EFEFEF;
+    height: 62px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 8%;
+    font-size: 28px;
+    color: black;
+    border: none;
+}
+
+.form1::placeholder {
+    color: #000000;
+    margin-left: 10%;
+    padding-left: 50px;
+}
+
+#touch-join-div1-inp3 {
+    height: 135px;
+    margin-top: 3%;
+}
+
+#form button {
+    width: 60%;
+    height: 80px;
+    background-color: #F79521;
+    font-size: 28px;
+    font-weight: 400;
+    border-radius: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;
+}
+
+#join-div2 p {
+    font-size: 28px;
+    margin-top: 12%;
+    font-weight: 400;
+    line-height: 35px;
+    /* margin-top: 12%; */
+    margin-left: 8%;
+    width: 64%;
+}
+
+#join-div3 {
+    margin-left: 8%;
+    width: 64%;
+    margin-top: 8%;
+    /* border: 2px solid blue; */
+}
+
+.touch-join-div2-div-location-mail {
+    margin-left: 5%;
+    display: inline-flex;
+    width: 100%;
+}
+
+.location-mail-p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-left: 5%;
+    width: 60%;
+    /* padding-top: 10px; */
+}
+
+.location {
+    margin-top: 0.5cm;
+    /* border: 2px solid red; */
+}
+
+#map {
+    width: 90%;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+#map iframe {
+    width: 70%;
+    height: 500px;
+    border: none;
+}

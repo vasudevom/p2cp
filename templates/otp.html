@@ -1,0 +1,50 @@
+{% extends  'base.html' %}
+{% block content %}
+{% for message in messages %}
+    <div id="message" >
+     <li style="text-align:center; color:green;" {% if message.tags %} class="{{ message.tags }}"{% endif %}>
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+        {{ message }}
+    </li>
+    </div>
+{% endfor %}
+
+    <section class="login-block">
+            <div class="col-sm-12">
+                <form class="md-float-material form-material" id="sign" action=" " method="POST">
+                    {% csrf_token %}
+                        <div class="auth-box card">
+                            <div class="card-block" id="signup">
+                                <div class="row">
+                                   <div class="col-md-12">
+                                        <h5 class="text-center heading">Enter Your OTP</h5>
+                                    </div>
+                                    
+                                </div>
+                                <br><br>
+                                 <div class="form-group form-primary"> 
+                                <input type="text" class="form-control" name="otp" value="" placeholder="OTP" >
+                            </div><br>
+                           
+                                   <div class="row">
+                                    <div class="col-md-12"> <input type="submit" id="btn-bg" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="submit" value="Submit"> 
+                                      </div>
+                            <div class="or-container">
+                                <div class="line-separator"></div>
+                                    <div class="or-label">or</div>
+                                        <div class="line-separator"></div>
+                                </div>
+                                
+                               
+                               
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+
+
